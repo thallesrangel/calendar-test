@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.menu h3
+{
+  margin: 1.5rem 0rem;
+}
+
+.dash h4
+{
+  margin: 1rem 0rem;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background-color: #121214;
+  color: #FFF;
+}
+
+.login form
+{
+  background: rgb(32, 32, 36);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.login .form-group
+{
+   padding: 0.6rem 0rem;
+}
+
+.txt-red
+{
+  color: #c0392b;
+}
+
+.txt-green
+{
+  color: #04D361;
+}
+
+tbody tr td form
+{
+  display: inline;
+}

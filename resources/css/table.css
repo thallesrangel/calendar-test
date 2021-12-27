@@ -1,0 +1,66 @@
+.table
+{
+    background: #FFF;
+    margin-bottom: 0rem;
+    color: #2c3e50;
+}
+
+.table-head
+{
+    overflow: auto;
+}
+
+.table-head {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.table-head th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 0px;
+}
+.table-body td
+{
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+th, td {
+    font-weight: unset;
+    padding-right: 10px;
+}
+
+.table-head th {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+    background-color: transparent;
+    font-weight: 520;
+}
+
+.div-table
+{
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.table-body tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+  
+.table-row td
+{
+    right: 5px;
+}

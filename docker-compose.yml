@@ -1,0 +1,43 @@
+version: "3.8"
+services:
+    app:
+        build: .
+        container_name: calendar-php
+        working_dir: /var/www/
+        command: php artisan serve --host=0.0.0.0 --port=80
+        ports:
+            - '80:80'
+        volumes:
+            - ./:/var/www
+        networks:
+            - app-network
+    mysqldb:
+        container_name: calendar-mysqldb
+        image: mysql:5.7
+        ports:
+            - '3306:3306'
+        volumes:
+            - ./docker/data/mysql:/var/lib/mysql
+            - ./docker/logs/mysql:/var/log/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=calendar
+        networks:
+            - app-network
+    nginx:
+        image: nginx:alpine
+        container_name: calendar-nginx
+        ports:
+            - 8000:80
+        volumes:
+            - ./:/var/www
+            - ./nginx/conf.d/:/etc/nginx/conf.d/
+        networks:
+            - app-network
+        depends_on:
+            - mysqldb
+        links:
+            - mysqldb
+networks:
+    app-network:
+        driver: bridge
